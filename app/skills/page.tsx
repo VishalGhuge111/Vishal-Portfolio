@@ -20,10 +20,10 @@ import {
   SiFirebase,
   SiGit,
   SiDocker,
-  SiAmazonaws,
+  SiAwsamplify,
   SiVercel,
   SiFigma,
-  SiVisualstudiocode,
+  SiVsco,
 } from "react-icons/si"
 
 export default function SkillsPage() {
@@ -65,10 +65,10 @@ export default function SkillsPage() {
       skills: [
         { name: "Git", icon: SiGit, color: "text-orange-600" },
         { name: "Docker", icon: SiDocker, color: "text-blue-500" },
-        { name: "AWS", icon: SiAmazonaws, color: "text-orange-400" },
+        { name: "AWS", icon: SiAwsamplify, color: "text-orange-400" },
         { name: "Vercel", icon: SiVercel, color: "text-black dark:text-white" },
         { name: "Figma", icon: SiFigma, color: "text-purple-500" },
-        { name: "VS Code", icon: SiVisualstudiocode, color: "text-blue-500" },
+        { name: "VS Code", icon: SiVsco, color: "text-blue-500" },
       ],
     },
   ]
