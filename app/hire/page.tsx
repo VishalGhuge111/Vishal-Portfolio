@@ -80,11 +80,11 @@ export default function HirePage() {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <FiMail className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-                  <span className="text-gray-600 dark:text-gray-400">vishal@example.com</span>
+                  <span className="text-gray-600 dark:text-gray-400">vishalghuge2005@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <FiPhone className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-                  <span className="text-gray-600 dark:text-gray-400">+91 12345 67890</span>
+                  <span className="text-gray-600 dark:text-gray-400">+91 7666768179</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <FiCalendar className="w-5 h-5 text-blue-600 dark:text-blue-400" />

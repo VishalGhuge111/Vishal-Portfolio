@@ -3,10 +3,10 @@ import { FaWhatsapp } from "react-icons/fa"
 
 export default function Footer() {
   const socialLinks = [
-    { href: "https://instagram.com/vishal", icon: FiInstagram, color: "text-pink-600" },
-    { href: "https://linkedin.com/in/vishal", icon: FiLinkedin, color: "text-blue-600" },
-    { href: "https://github.com/vishal", icon: FiGithub, color: "text-gray-800 dark:text-gray-200" },
-    { href: "https://wa.me/1234567890", icon: FaWhatsapp, color: "text-green-600" },
+    { href: "https://instagram.com/vishalghuge.111", icon: FiInstagram, color: "text-pink-600" },
+    { href: "https://linkedin.com/in/vishalghuge111", icon: FiLinkedin, color: "text-blue-600" },
+    { href: "https://github.com/vishalghuge111", icon: FiGithub, color: "text-gray-800 dark:text-gray-200" },
+    { href: "https://wa.me/7666768179", icon: FaWhatsapp, color: "text-green-600" },
   ]
 
   return (
@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         {/* Desktop Footer */}
         <div className="hidden md:flex justify-between items-center">
-          <div className="text-base text-gray-600 dark:text-gray-400">© Vishal Ghuge – 2025</div>
+          <div className="text-base text-gray-600 dark:text-gray-400">©2025 - Vishal Ghuge</div>
           <div className="flex items-center space-x-6">
             {socialLinks.map((social) => {
               const Icon = social.icon
@@ -44,7 +44,7 @@ export default function Footer() {
 
         {/* Mobile Footer */}
         <div className="flex md:hidden items-center justify-between">
-          <div className="text-sm text-gray-600 dark:text-gray-400">© Vishal Ghuge – 2025</div>
+          <div className="text-sm text-gray-600 dark:text-gray-400">© 2025 - Vishal Ghuge</div>
           <div className="text-gray-400 text-lg">|</div>
           <div className="flex space-x-3">
             {socialLinks.map((social) => {

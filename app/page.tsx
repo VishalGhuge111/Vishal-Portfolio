@@ -21,7 +21,7 @@ export default function Home() {
 
   const handleResumeClick = () => {
     const link = document.createElement("a")
-    link.href = "/resume.pdf"
+    link.href = "/VishalGhuge_Resume.pdf"
     link.download = "VishalGhuge_Resume.pdf"
     document.body.appendChild(link)
     link.click()

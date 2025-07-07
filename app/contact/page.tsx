@@ -50,7 +50,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-medium text-gray-900 dark:text-white">Email</h3>
-                    <p className="text-gray-600 dark:text-gray-400">vishal@example.com</p>
+                    <p className="text-gray-600 dark:text-gray-400">vishalghuge2005@example.com</p>
                   </div>
                 </div>
 
@@ -60,7 +60,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-medium text-gray-900 dark:text-white">Phone</h3>
-                    <p className="text-gray-600 dark:text-gray-400">+91 12345 67890</p>
+                    <p className="text-gray-600 dark:text-gray-400">+91 7666768179</p>
                   </div>
                 </div>
 
@@ -70,7 +70,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-medium text-gray-900 dark:text-white">Location</h3>
-                    <p className="text-gray-600 dark:text-gray-400">Maharashtra, India</p>
+                    <p className="text-gray-600 dark:text-gray-400">Pune, India</p>
                   </div>
                 </div>
               </div>

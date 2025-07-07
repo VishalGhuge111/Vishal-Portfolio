@@ -46,10 +46,10 @@ export default function Navbar() {
   ]
 
   const socialLinks = [
-    { href: "https://instagram.com/vishal", icon: FiInstagram, color: "text-pink-600" },
-    { href: "https://linkedin.com/in/vishal", icon: FiLinkedin, color: "text-blue-600" },
-    { href: "https://github.com/vishal", icon: FiGithub, color: "text-gray-800 dark:text-gray-200" },
-    { href: "https://wa.me/1234567890", icon: FaWhatsapp, color: "text-green-600" },
+    { href: "https://instagram.com/vishalghuge.111", icon: FiInstagram, color: "text-pink-600" },
+    { href: "https://linkedin.com/in/vishalghuge111", icon: FiLinkedin, color: "text-blue-600" },
+    { href: "https://github.com/vishalghuge111", icon: FiGithub, color: "text-gray-800 dark:text-gray-200" },
+    { href: "https://wa.me/7666768179", icon: FaWhatsapp, color: "text-green-600" },
   ]
 
   return (
@@ -282,7 +282,7 @@ export default function Navbar() {
                     )
                   })}
                   <a
-                    href="/resume.pdf"
+                    href="/vishalghuge-resume.pdf"
                     download
                     onClick={() => setIsMobileModalOpen(false)}
                     className="flex items-center space-x-4 px-4 py-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
