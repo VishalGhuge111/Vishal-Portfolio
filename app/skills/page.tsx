@@ -1,6 +1,6 @@
 "use client"
 import { motion } from "framer-motion"
-import { FiArrowLeft } from "react-icons/fi"
+import { FiArrowLeft, FiCode } from "react-icons/fi"
 import { useRouter } from "next/navigation"
 import {
   SiReact,
@@ -12,8 +12,6 @@ import {
   SiCss3,
   SiNodedotjs,
   SiExpress,
-  SiPython,
-  SiDjango,
   SiMongodb,
   SiPostgresql,
   SiMysql,
@@ -31,29 +29,29 @@ export default function SkillsPage() {
 
   const skillCategories = [
     {
-      title: "Frontend",
+      title: "Languages",
       skills: [
-        { name: "React", icon: SiReact, color: "text-blue-500" },
-        { name: "Next.js", icon: SiNextdotjs, color: "text-black dark:text-white" },
+        { name: "C++", icon: FiCode, color: "text-indigo-600" },
         { name: "JavaScript", icon: SiJavascript, color: "text-yellow-500" },
         { name: "TypeScript", icon: SiTypescript, color: "text-blue-600" },
-        { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-500" },
         { name: "HTML5", icon: SiHtml5, color: "text-orange-600" },
         { name: "CSS3", icon: SiCss3, color: "text-blue-500" },
       ],
     },
     {
-      title: "Backend",
+      title: "Frontend",
       skills: [
-        { name: "Node.js", icon: SiNodedotjs, color: "text-green-600" },
-        { name: "Express.js", icon: SiExpress, color: "text-gray-600" },
-        { name: "Python", icon: SiPython, color: "text-blue-500" },
-        { name: "Django", icon: SiDjango, color: "text-green-700" },
+        { name: "React", icon: SiReact, color: "text-blue-500" },
+        { name: "Next.js", icon: SiNextdotjs, color: "text-black dark:text-white" },
+        { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-500" },
+        { name: "Framer Motion", icon: FiCode, color: "text-pink-500" },
       ],
     },
     {
-      title: "Database",
+      title: "Backend & Database",
       skills: [
+        { name: "Node.js", icon: SiNodedotjs, color: "text-green-600" },
+        { name: "Express.js", icon: SiExpress, color: "text-gray-600" },
         { name: "MongoDB", icon: SiMongodb, color: "text-green-500" },
         { name: "PostgreSQL", icon: SiPostgresql, color: "text-blue-600" },
         { name: "MySQL", icon: SiMysql, color: "text-blue-500" },
@@ -69,6 +67,9 @@ export default function SkillsPage() {
         { name: "Vercel", icon: SiVercel, color: "text-black dark:text-white" },
         { name: "Figma", icon: SiFigma, color: "text-purple-500" },
         { name: "VS Code", icon: SiVsco, color: "text-blue-500" },
+        { name: "Canva", icon: FiCode, color: "text-pink-400" },
+        { name: "Google Apps Script", icon: FiCode, color: "text-green-600" },
+        { name: "Cashfree", icon: FiCode, color: "text-blue-600" },
       ],
     },
   ]

@@ -14,17 +14,36 @@ export default function ContactPage() {
     message: "",
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission
-    console.log("Form submitted:", formData)
-  }
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     })
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+
+    try {
+      const response = await fetch("https://script.google.com/macros/s/AKfycbxrGKC5WOdY6WTZumUbKoAn89y68eI8WyFHUPVL_98g6Nwbfx_eVGcqTwfJv8EaHfPb/exec", {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+
+      const result = await response.json()
+      if (result.status === "success") {
+        alert("Message sent successfully!")
+        setFormData({ name: "", email: "", subject: "", message: "" })
+      } else {
+        alert("Failed to send message.")
+      }
+    } catch (error) {
+      console.error("Error:", error)
+      alert("Something went wrong.")
+    }
   }
 
   return (
@@ -34,7 +53,9 @@ export default function ContactPage() {
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-8">
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Contact Me</h1>
-          <p className="text-xl text-gray-600 dark:text-gray-400">Let's discuss your next project or just say hello</p>
+          <p className="text-xl text-gray-600 dark:text-gray-400">
+            Let's discuss your next project or just say hello
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">

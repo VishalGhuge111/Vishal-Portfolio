@@ -27,27 +27,28 @@ export default function AboutPage() {
             <div>
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">Who I Am</h2>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                I'm Vishal Ghuge, a passionate Full Stack Developer from Maharashtra, India. With expertise in the MERN
-                stack, JavaScript, and Firebase, I love building smart products and innovative solutions that solve
-                real-world problems.
+                Hi, I’m Vishal Ghuge, a passionate Full Stack Developer from Maharashtra, India 
+                who loves building things that make life easier or smarter. I mostly work with the MERN stack, 
+                JavaScript, and Firebase, and I’m always exploring new tools and ideas to level up.
               </p>
             </div>
 
             <div>
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">My Journey</h2>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                My journey in technology started with curiosity and has evolved into a passion for creating meaningful
-                digital experiences. I've worked on various projects including CareerSetu, a career guidance platform,
-                and SPPU Engineer, an educational platform for engineering students.
+                My journey in technology started with as a curiosity for how technology works has turned into a 
+                deep passion for development. Over time, I’ve worked on impactful projects like CareerSetu — 
+                a career guidance platform, and SPPU Engineer — an educational resource hub for engineering students. 
+                Each project has helped me grow as a developer and problem-solver.
               </p>
             </div>
 
             <div>
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">What I Do</h2>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                I specialize in full-stack web development, creating responsive and user-friendly applications. My
-                expertise includes React, Node.js, MongoDB, Express, and modern web technologies. I'm always eager to
-                learn new technologies and take on challenging projects.
+                I focus on full-stack web development, creating clean, responsive, and performance-driven applications. 
+                My skill set includes React, Node.js, Express, MongoDB, and other modern web technologies. 
+                I’m constantly learning and love taking on new challenges that push my limits.
               </p>
             </div>
 
@@ -56,15 +57,15 @@ export default function AboutPage() {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <FiMapPin className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-                  <span className="text-gray-600 dark:text-gray-400">Maharashtra, India</span>
+                  <span className="text-gray-600 dark:text-gray-400">Pune, Maharashtra</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <FiMail className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-                  <span className="text-gray-600 dark:text-gray-400">vishal@example.com</span>
+                  <span className="text-gray-600 dark:text-gray-400">vishalghuge2005@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <FiPhone className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-                  <span className="text-gray-600 dark:text-gray-400">+91 12345 67890</span>
+                  <span className="text-gray-600 dark:text-gray-400">+91 7666768179</span>
                 </div>
               </div>
             </div>

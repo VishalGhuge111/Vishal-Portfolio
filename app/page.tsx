@@ -57,14 +57,25 @@ export default function Home() {
   ]
 
   return (
-    <main className="min-h-[calc(100vh-8rem)] flex items-center justify-center bg-black px-4 transition-colors">
+    <main className="min-h-[91dvh] sm:min-h-[90dvh] md:min-h-[83.3vh] flex flex-col items-center justify-center dark:bg-black px-4 transition-colors">
       <div className="w-full max-w-4xl mx-auto text-center space-y-8">
+
+        {/* Profile Image */}
+        <motion.img
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.1, duration: 0.4 }}
+          src="/profile.jpg"
+          alt="Vishal Ghuge"
+          className="w-32 h-32 mx-auto rounded-full object-cover border-[3px] border-black dark:border-2 dark:border-white shadow-lg"
+        />
+
         {/* Name */}
         <motion.h1
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2, duration: 0.5 }}
-          className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight max-w-2xl mx-auto"
+          className="text-4xl sm:text-5xl md:text-6xl font-bold text-black dark:text-white tracking-tight max-w-2xl mx-auto"
         >
           Vishal Ghuge
         </motion.h1>
@@ -94,7 +105,7 @@ export default function Home() {
                   className={`flex items-center space-x-2 px-4 py-2 ${shortcut.bgColor} rounded-lg border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-all duration-200 hover:scale-105 min-w-[120px] text-sm`}
                 >
                   <Icon className={`w-4 h-4 ${shortcut.color}`} />
-                  <span className="font-medium text-gray-700 dark:text-gray-300">{shortcut.label}</span>
+                  <span className="font-medium text-gray-800 dark:text-gray-300">{shortcut.label}</span>
                 </button>
               )
             })}
@@ -111,7 +122,7 @@ export default function Home() {
                   className={`flex flex-col items-center space-y-2 p-3 ${shortcut.bgColor} rounded-xl border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-all duration-200 hover:scale-105`}
                 >
                   <Icon className={`w-6 h-6 ${shortcut.color}`} />
-                  <span className="text-xs font-medium text-gray-700 dark:text-gray-300">{shortcut.label}</span>
+                  <span className="text-xs font-medium text-gray-800 dark:text-gray-300">{shortcut.label}</span>
                 </button>
               )
             })}
@@ -120,4 +131,5 @@ export default function Home() {
       </div>
     </main>
   )
+
 }

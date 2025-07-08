@@ -12,7 +12,9 @@ export default function ExperiencePage() {
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-8">
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Experience</h1>
-          <p className="text-xl text-gray-600 dark:text-gray-400">My professional journey and work experience</p>
+          <p className="text-xl text-gray-600 dark:text-gray-400">
+            My professional journey and work experience
+          </p>
         </motion.div>
 
         <div className="space-y-8">
@@ -26,7 +28,9 @@ export default function ExperiencePage() {
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div className="flex-1">
-                  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">{experience.position}</h2>
+                  <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">
+                    {experience.position}
+                  </h2>
                   <div className="flex items-center space-x-4 text-gray-600 dark:text-gray-400 mb-4">
                     <div className="flex items-center space-x-2">
                       <FiBriefcase className="w-4 h-4" />
@@ -38,7 +42,7 @@ export default function ExperiencePage() {
                     </div>
                   </div>
                 </div>
-                <div className="flex items-center space-x-2">
+                <div className="flex items-center space-x-2 mt-2 md:mt-0">
                   <span
                     className={`px-3 py-1 text-sm font-medium rounded-full ${
                       experience.type === "Full-time"
@@ -51,10 +55,15 @@ export default function ExperiencePage() {
                 </div>
               </div>
 
-              <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">{experience.description}</p>
+              <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
+                {experience.description}
+              </p>
 
+              {/* Technologies Used */}
               <div>
-                <h3 className="text-sm font-medium text-gray-900 dark:text-white mb-3">Technologies Used:</h3>
+                <h3 className="text-sm font-medium text-gray-900 dark:text-white mb-3">
+                  Technologies Used:
+                </h3>
                 <div className="flex flex-wrap gap-2">
                   {experience.technologies.map((tech) => (
                     <span
@@ -66,6 +75,20 @@ export default function ExperiencePage() {
                   ))}
                 </div>
               </div>
+
+              {/* Achievements */}
+              {experience.achievements && experience.achievements.length > 0 && (
+                <div className="mt-6">
+                  <h3 className="text-sm font-medium text-gray-900 dark:text-white mb-3">
+                    Key Achievements:
+                  </h3>
+                  <ul className="list-disc pl-5 space-y-2 text-gray-600 dark:text-gray-400">
+                    {experience.achievements.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </motion.div>
           ))}
         </div>
