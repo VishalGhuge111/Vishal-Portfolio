@@ -46,10 +46,10 @@ export default function Navbar() {
   ]
 
   const socialLinks = [
+    { href: "https://wa.me/7666768179", icon: FaWhatsapp, color: "text-green-600" },
     { href: "https://instagram.com/vishalghuge.111", icon: FiInstagram, color: "text-pink-600" },
     { href: "https://linkedin.com/in/vishalghuge111", icon: FiLinkedin, color: "text-blue-600" },
     { href: "https://github.com/vishalghuge111", icon: FiGithub, color: "text-gray-800 dark:text-gray-200" },
-    { href: "https://wa.me/7666768179", icon: FaWhatsapp, color: "text-green-600" },
   ]
 
   return (
