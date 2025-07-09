@@ -142,7 +142,7 @@ export const projectsData = [
     slug: "sppu-engineer",
     title: "SPPU Engineer",
     description: "Educational platform for SPPU engineering students",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/projects/sppu-engineers.png",
     technologies: ["Next.js", "Firebase", "Tailwind CSS"],
     githubUrl: "https://github.com/vishal/sppu-engineer",
     liveUrl: "https://sppu-engineer.com",

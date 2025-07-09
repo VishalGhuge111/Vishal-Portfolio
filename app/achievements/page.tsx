@@ -12,52 +12,68 @@ export default function AchievementsPage() {
   const achievements = [
     {
       id: 1,
-      title: "University Hackathon Winner",
-      description: "Won 1st place in university-level hackathon with CityConnect project",
+      title: "IEEE TechSangam Finalist",
+      description: "Top 50 out of 310+ teams at MIT ADT’s 24hr national level hackathon",
       icon: "🏆",
       color: "text-yellow-600",
       bgColor: "bg-yellow-100 dark:bg-yellow-900/30",
       hasDetails: true,
       hasImage: true,
-      image: "/placeholder.svg?height=200&width=300&text=Hackathon+Winner",
+      image: "/achievements/ieee-techsangam.jpg", // Replace with actual image path
       details:
-        "Led a team of 4 developers to create CityConnect, a smart city platform that connects citizens with local government services. The project was built using React, Node.js, and MongoDB, featuring real-time service tracking and citizen-government communication tools. Competed against 50+ teams and won based on innovation, technical implementation, and social impact.",
+        "Finalist at IEEE TechSangam 2K25, hosted by MIT ADT University, Pune. Our project, CityConnect, tackled civic problems like poor infrastructure, waste management, and lack of engagement. It featured GPS-based issue reporting, a chatbot, recycling rewards through EcoCoins, and a leaderboard system to promote active participation. Recognized for its innovation, real-world impact, and clean technical execution.",
     },
+
     {
       id: 2,
-      title: "Coding Club Leader",
-      description: "Led the university coding club and organized 10+ technical workshops",
-      icon: "⭐",
-      color: "text-blue-600",
-      bgColor: "bg-blue-100 dark:bg-blue-900/30",
+      title: "Ideathon 2.0 Finalist",
+      description: "Finalist in PCU Ideathon 2.0 – 24hr national hackathon (Top 40 out of 500+ teams)",
+      icon: "💡",
+      color: "text-indigo-600",
+      bgColor: "bg-indigo-100 dark:bg-indigo-900/30",
       hasDetails: true,
       hasImage: true,
-      image: "/placeholder.svg?height=200&width=300&text=Coding+Club+Leader",
+      image: "/achievements/ideathon-2.0.jpg",
       details:
-        "Successfully managed a coding club with 200+ active members. Organized weekly coding sessions, hackathons, and technical workshops covering topics like web development, data structures, and competitive programming. Mentored 50+ junior students and helped them secure internships at top tech companies.",
+        "Selected as one of the Top 40 teams out of 500+ entries in PCU Ideathon 2.0, a 24-hour national-level hackathon. Our project, MediVault, focused on revolutionizing healthcare data management using Blockchain and AI to ensure secure, transparent, and intelligent medical record handling. Demonstrated innovation, teamwork, and strong problem-solving under pressure.",
     },
+
     {
       id: 3,
-      title: "Academic Excellence",
-      description: "Maintained CGPA of 8.5/10 throughout the Computer Science Engineering program",
-      icon: "🎓",
-      color: "text-green-600",
-      bgColor: "bg-green-100 dark:bg-green-900/30",
+      title: "Consolation Prize – Takshantra",
+      description: "Secured consolation prize at Shreeyash College's Takshantra event for presenting an innovative tech project",
+      icon: "🏅",
+      color: "text-blue-600",
+      bgColor: "bg-blue-100 dark:bg-blue-900/30",
       hasDetails: false,
       hasImage: false,
     },
+
     {
       id: 4,
-      title: "Project Portfolio",
-      description: "Completed 15+ personal projects showcasing various technologies",
-      icon: "💼",
+      title: "State-Level Project Competition Finalist",
+      description: "Represented college in MSBTE project competition with IoT home automation system",
+      icon: "🏆",
       color: "text-purple-600",
       bgColor: "bg-purple-100 dark:bg-purple-900/30",
       hasDetails: true,
       hasImage: false,
       details:
-        "Developed a diverse portfolio of projects including CareerSetu (career guidance platform), SPPU Engineer (educational platform), CityConnect (smart city solution), EcoTracker (sustainability app), and many more. Each project demonstrates proficiency in different technology stacks and problem-solving approaches.",
+        "Selected as a finalist in the MSBTE State-Level Project Competition 2023–24, where our team represented our college with an IoT-based Home Automation project. The project focused on controlling home appliances remotely using sensors and smart devices. Appreciated for its practical use and simple implementation.",
     },
+    {
+      id: 5,
+      title: "Social Service Award",
+      description: "Recognized by Caring Souls Foundation for contribution to donation drive",
+      icon: "🥉",
+      color: "text-purple-600",
+      bgColor: "bg-purple-100 dark:bg-purple-900/30",
+      hasDetails: true,
+      hasImage: false,
+      details:
+        "Awarded Bronze Medal in 8th standard by Caring Souls Foundation for actively participating in a social service initiative. Successfully helped collect funds for cancer and AIDS patients through a school-organized donation drive. Recognized for compassion, community involvement, and teamwork.",
+    }
+
   ]
 
   const toggleExpanded = (id: number) => {
@@ -142,7 +158,7 @@ export default function AchievementsPage() {
 
                   {/* Achievement Image - Full Width */}
                   {achievement.hasImage && achievement.image && (
-                    <div className="relative h-32 md:h-48 bg-gray-100 dark:bg-gray-700 rounded-lg overflow-hidden">
+                    <div className="relative w-full h-[200px] md:h-[360px] bg-gray-100 dark:bg-gray-700 rounded-lg overflow-hidden">
                       <Image
                         src={achievement.image || "/placeholder.svg"}
                         alt={achievement.title}
