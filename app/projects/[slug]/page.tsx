@@ -167,21 +167,23 @@ export default function ProjectPage({ params }: ProjectPageProps) {
                 <h2 className="text-lg md:text-2xl font-semibold text-gray-900 dark:text-white mb-3 md:mb-4">
                   Project Gallery
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
-                  {[1, 2, 3, 4].map((i) => (
-                    <div
-                      key={i}
-                      className="relative h-32 md:h-48 bg-gray-100 dark:bg-gray-700 rounded-lg overflow-hidden"
-                    >
-                      <Image
-                        src={`/placeholder.svg?height=200&width=300&text=Screenshot ${i}`}
-                        alt={`${project.title} Screenshot ${i}`}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                  ))}
-                </div>
+                {project.gallery && (
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+                    {project.gallery.map((src, index) => (
+                      <div
+                        key={index}
+                        className="relative h-40 md:h-48 bg-gray-100 dark:bg-gray-700 rounded-lg overflow-hidden"
+                      >
+                        <Image
+                          src={src}
+                          alt={`${project.title} Screenshot ${index + 1}`}
+                          fill
+                          className="object-cover transition-transform duration-300 hover:scale-105"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           </div>

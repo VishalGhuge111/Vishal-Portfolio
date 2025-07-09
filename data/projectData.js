@@ -2,6 +2,8 @@ export const projectsData = [
   {
     id: "1",
     title: "CityConnect",
+    category: "Smart City",
+    tags: ["Government", "CivicTech", "Real-time"],
     description:
       "A comprehensive smart city platform that connects citizens with local government services, enabling efficient communication and service delivery.",
     image: "/placeholder.svg?height=300&width=400",
@@ -23,9 +25,10 @@ export const projectsData = [
     ],
   },
   {
-    id: 1,
-    slug: "careersetu",
+    id: "2",
     title: "CareerSetu",
+    category: "EdTech",
+    tags: ["AI", "Students", "Career Guidance"],
     description: "A comprehensive career guidance platform built with MERN stack",
     image: "/placeholder.svg?height=300&width=400",
     technologies: ["React", "Node.js", "MongoDB", "Express"],
@@ -47,53 +50,69 @@ export const projectsData = [
   },
   {
     id: "3",
-    title: "EcoTracker",
+    title: "SPPU Engineer",
+    slug: "sppu-engineer",
+    category: "EdTech",
+    tags: ["SPPU", "Study Notes", "Engineering", "Semester-wise", "Cashfree", "Google Drive"],
     description:
-      "A sustainability tracking app that helps individuals and organizations monitor their carbon footprint and adopt eco-friendly practices.",
-    image: "/placeholder.svg?height=300&width=400",
-    technologies: ["React Native", "Firebase", "Chart.js", "Node.js"],
-    githubUrl: "https://github.com/vishal/ecotracker",
-    liveUrl: "https://ecotracker-demo.vercel.app",
-    slug: "ecotracker",
+      "A semester-wise educational platform built for engineering students of Savitribai Phule Pune University (SPPU), offering structured study materials, previous year papers, and automated access through a clean, login-free experience.",
+    image: "/projects/sppu-engineers.png",
+    technologies: ["Next.js", "Tailwind CSS", "Firebase", "Google Apps Script", "Google Drive", "Cashfree"],
+    githubUrl: "https://github.com/Vishalghuge111/sppu-engineers",
+    liveUrl: "https://sppuengineers.site",
     problem:
-      "People want to be more environmentally conscious but lack tools to track and improve their environmental impact.",
+      "SPPU engineering students often struggle to find clean, syllabus-aligned, semester-wise study notes and previous year papers. Resources are scattered across Telegram groups, WhatsApp, and outdated blogs, wasting student time and causing confusion before exams.",
     solution:
-      "EcoTracker provides an easy way to monitor daily activities, calculate carbon footprint, and get suggestions for more sustainable alternatives.",
+      "SPPU Engineer solves this by offering a centralized platform tailored to the SPPU syllabus. Students can easily find semester-specific resources and get instant access to organized Google Drive folders after a simple one-time payment — all without requiring login or account creation.",
     features: [
-      "Carbon footprint calculator",
-      "Daily activity tracking",
-      "Eco-friendly alternatives suggestions",
-      "Progress visualization",
-      "Community challenges",
-      "Achievement badges",
+      "Semester-wise subject listing with clear navigation",
+      "Separate pages for each branch (e.g., Computer, IT, AIDS)",
+      "Notes for 1st to 6th semester only — aligned to new SPPU pattern",
+      "Google Drive integration to host and deliver notes securely",
+      "Cashfree Payment Form + Google Apps Script for instant folder access",
+      "Referral system with upto ₹50 discount for first-time users",
+      "Professional, mobile-friendly design using Tailwind CSS",
+      "No-login access system for frictionless experience",
+      "Google Sheet-based backend to track paid students & access status",
+      "Testimonials section showing real SPPU students (mostly from Pune colleges)",
+    ],
+    gallery: [
+      "/projects/sppu/screenshot1.png",
+      "/projects/sppu/screenshot2.png",
+      "/projects/sppu/screenshot3.png",
+      "/projects/sppu/screenshot4.png",
     ],
   },
-  {
-    id: "4",
-    title: "StudyBuddy",
-    description:
-      "A collaborative learning platform that connects students for group studies, resource sharing, and peer-to-peer learning.",
-    image: "/placeholder.svg?height=300&width=400",
-    technologies: ["Vue.js", "Django", "WebRTC", "Redis", "PostgreSQL"],
-    githubUrl: "https://github.com/vishal/studybuddy",
-    liveUrl: "https://studybuddy-demo.vercel.app",
-    slug: "studybuddy",
-    problem:
-      "Students often struggle with isolation while studying and lack access to collaborative learning opportunities.",
-    solution:
-      "StudyBuddy creates virtual study groups where students can collaborate, share resources, and learn together in real-time.",
-    features: [
-      "Virtual study rooms",
-      "Real-time collaboration tools",
-      "Resource sharing library",
-      "Study schedule coordination",
-      "Peer tutoring marketplace",
-      "Progress tracking and analytics",
-    ],
-  },
+    {
+      id: "4",
+      title: "StudyBuddy",
+      category: "Education",
+      tags: ["Peer Learning", "Group Study", "Live Chat"],
+      description:
+        "A collaborative learning platform that connects students for group studies, resource sharing, and peer-to-peer learning.",
+      image: "/placeholder.svg?height=300&width=400",
+      technologies: ["Vue.js", "Django", "WebRTC", "Redis", "PostgreSQL"],
+      githubUrl: "https://github.com/vishal/studybuddy",
+      liveUrl: "https://studybuddy-demo.vercel.app",
+      slug: "studybuddy",
+      problem:
+        "Students often struggle with isolation while studying and lack access to collaborative learning opportunities.",
+      solution:
+        "StudyBuddy creates virtual study groups where students can collaborate, share resources, and learn together in real-time.",
+      features: [
+        "Virtual study rooms",
+        "Real-time collaboration tools",
+        "Resource sharing library",
+        "Study schedule coordination",
+        "Peer tutoring marketplace",
+        "Progress tracking and analytics",
+      ],
+    },
   {
     id: "5",
     title: "HealthHub",
+    category: "HealthTech",
+    tags: ["Medical", "Health Records", "Appointments"],
     description:
       "A comprehensive health management system that helps users track their health metrics, schedule appointments, and maintain medical records.",
     image: "/placeholder.svg?height=300&width=400",
@@ -117,6 +136,8 @@ export const projectsData = [
   {
     id: "6",
     title: "TaskFlow",
+    category: "Productivity",
+    tags: ["Project Management", "AI", "Task Optimization"],
     description:
       "An intelligent project management tool that uses AI to optimize task allocation, predict project timelines, and improve team productivity.",
     image: "/placeholder.svg?height=300&width=400",
@@ -138,20 +159,23 @@ export const projectsData = [
     ],
   },
   {
-    id: 2,
-    slug: "sppu-engineer",
+    id: "7",
     title: "SPPU Engineer",
+    category: "EdTech",
+    tags: ["SPPU", "Notes", "Semester-wise"],
     description: "Educational platform for SPPU engineering students",
     image: "/projects/sppu-engineers.png",
     technologies: ["Next.js", "Firebase", "Tailwind CSS"],
     githubUrl: "https://github.com/Vishalghuge111/sppu-engineers",
     liveUrl: "https://sppuengineers.site",
     slug: "sppu-engineer",
-    problem: "No problem description provided.",
-    solution: "No solution description provided.",
+    problem:
+      "SPPU students often struggle to find structured, semester-wise resources tailored to the syllabus, especially for engineering subjects.",
+    solution:
+      "SPPU Engineer provides a centralized learning platform with curated study material, previous year papers, and tools that help students prepare effectively.",
     features: ["Study materials", "Previous year papers", "Interactive learning tools"],
   },
-]
+];
 
-export const projects = projectsData
-export default projectsData
+export const projects = projectsData;
+export default projectsData;
