@@ -32,7 +32,7 @@ export const projectsData = [
     description: "A personalized career guidance platform for engineering and diploma students to explore opportunities, track learning, and build future-ready skills.",
     image: "/projects/careersetu/cover.png",
     technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS", "Firebase"],
-    githubUrl: "https://github.com/Vishalghuge111/career-setu",
+    githubUrl: "https://github.com/vishalghuge111/career-setu",
     liveUrl: "https://careersetu.com",
     slug: "careersetu",
     problem:
