@@ -28,7 +28,7 @@ export const projectsData = [
     id: "2",
     title: "CareerSetu",
     category: "EdTech",
-    tags: ["Career Guidance", "Students", "ShikshaX", "Internships", "Skill", "AI", "Resume Builder"],
+    tags: ["Career Guidance", "Students", "ShikshaX", "Internships", "Skill", "AI", "Resume"],
     description: "A personalized career guidance platform for engineering and diploma students to explore opportunities, track learning, and build future-ready skills.",
     image: "/projects/careersetu/cover.png",
     technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS", "Firebase"],
@@ -53,10 +53,10 @@ export const projectsData = [
       "Monthly top performers rewarded with tech gadgets",
     ],
     gallery: [
-      "/projects/careersetu/screenshot1.png",
-      "/projects/careersetu/screenshot2.png",
-      "/projects/careersetu/screenshot3.png",
-      "/projects/careersetu/screenshot4.png",
+      "/projects/careersetu/ss1.png",
+      "/projects/careersetu/ss2.png",
+      "/projects/careersetu/ss3.png",
+      "/projects/careersetu/ss4.png",
     ]
   },
   {
