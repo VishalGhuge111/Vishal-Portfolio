@@ -53,10 +53,10 @@ export const projectsData = [
       "Monthly top performers rewarded with tech gadgets",
     ],
     gallery: [
-      "/projects/careersetu/ss1.png",
-      "/projects/careersetu/ss2.png",
-      "/projects/careersetu/ss3.png",
-      "/projects/careersetu/ss4.png",
+      "/projects/careersetu/screenshot1.png",
+      "/projects/careersetu/screenshot2.png",
+      "/projects/careersetu/screenshot3.png",
+      "/projects/careersetu/screenshot4.png",
     ]
   },
   {
@@ -96,16 +96,16 @@ export const projectsData = [
   },
     {
       id: "4",
-      title: "StudyBuddy",
-      category: "Education",
+      title: "Medivault",
+      category: "Blockchain",
       tags: ["Peer Learning", "Group Study", "Live Chat"],
       description:
         "A collaborative learning platform that connects students for group studies, resource sharing, and peer-to-peer learning.",
       image: "/placeholder.svg?height=300&width=400",
       technologies: ["Vue.js", "Django", "WebRTC", "Redis", "PostgreSQL"],
-      githubUrl: "https://github.com/vishal/studybuddy",
+      githubUrl: "https://github.com/Vishalghuge111/medivault",
       liveUrl: "https://studybuddy-demo.vercel.app",
-      slug: "studybuddy",
+      slug: "medivault",
       problem:
         "Students often struggle with isolation while studying and lack access to collaborative learning opportunities.",
       solution:
@@ -119,73 +119,55 @@ export const projectsData = [
         "Progress tracking and analytics",
       ],
     },
-  {
+    {
     id: "5",
-    title: "HealthHub",
-    category: "HealthTech",
-    tags: ["Medical", "Health Records", "Appointments"],
+    title: "Women Safety App",
+    category: "Android",
+    tags: ["Safety", "SOS", "Location Tracking", "Emergency"],
     description:
-      "A comprehensive health management system that helps users track their health metrics, schedule appointments, and maintain medical records.",
-    image: "/placeholder.svg?height=300&width=400",
-    technologies: ["Angular", "Spring Boot", "MySQL", "Docker", "AWS"],
-    githubUrl: "https://github.com/vishal/healthhub",
-    liveUrl: "https://healthhub-demo.vercel.app",
-    slug: "healthhub",
+      "An Android-based mobile app designed to enhance women's safety by providing quick emergency alerts, real-time location sharing, and trusted contacts communication.",
+    image: "/projects/android/women-safety-app.webp",
+    technologies: ["Java", "XML", "Android Studio", "Google Maps API", "SMS Manager"],
+    githubUrl: "https://github.com/vishalghuge111/women-safety-app", 
+    liveUrl: "", 
+    slug: "women-safety-app",
     problem:
-      "Managing personal health records and coordinating healthcare services is often fragmented and inefficient.",
+      "In emergency situations, women often do not have enough time to reach out for help manually, and many safety apps are either complex or lack quick-response features.",
     solution:
-      "HealthHub provides a centralized platform for health management, connecting patients, doctors, and healthcare providers.",
+      "This app enables users to send instant SOS alerts with location to predefined emergency contacts by just pressing a button or shaking the phone. It also includes features like fake call alerts, live tracking, and quick helpline access.",
     features: [
-      "Digital health records",
-      "Appointment scheduling",
-      "Medication reminders",
-      "Health metrics tracking",
-      "Doctor-patient communication",
-      "Insurance integration",
-    ],
+      "Single-tap SOS alert with GPS location",
+      "Shake-to-send emergency message",
+      "Live location tracking using Google Maps API",
+      "Auto SMS to trusted contacts",
+    ]
   },
+
   {
-    id: "6",
-    title: "TaskFlow",
-    category: "Productivity",
-    tags: ["Project Management", "AI", "Task Optimization"],
-    description:
-      "An intelligent project management tool that uses AI to optimize task allocation, predict project timelines, and improve team productivity.",
-    image: "/placeholder.svg?height=300&width=400",
-    technologies: ["React", "GraphQL", "Python", "MongoDB", "Docker"],
-    githubUrl: "https://github.com/vishal/taskflow",
-    liveUrl: "https://taskflow-demo.vercel.app",
-    slug: "taskflow",
-    problem:
-      "Traditional project management tools lack intelligence and often lead to poor resource allocation and missed deadlines.",
-    solution:
-      "TaskFlow uses machine learning to analyze team performance, predict bottlenecks, and suggest optimal task distributions.",
-    features: [
-      "AI-powered task allocation",
-      "Predictive timeline analysis",
-      "Team performance insights",
-      "Automated progress reporting",
-      "Resource optimization",
-      "Integration with popular tools",
-    ],
-  },
-  {
-    id: "7",
-    title: "SPPU Engineer",
-    category: "EdTech",
-    tags: ["SPPU", "Notes", "Semester-wise"],
-    description: "Educational platform for SPPU engineering students",
-    image: "/projects/sppu-engineers.png",
-    technologies: ["Next.js", "Firebase", "Tailwind CSS"],
-    githubUrl: "https://github.com/Vishalghuge111/sppu-engineers",
-    liveUrl: "https://sppuengineers.site",
-    slug: "sppu-engineer",
-    problem:
-      "SPPU students often struggle to find structured, semester-wise resources tailored to the syllabus, especially for engineering subjects.",
-    solution:
-      "SPPU Engineer provides a centralized learning platform with curated study material, previous year papers, and tools that help students prepare effectively.",
-    features: ["Study materials", "Previous year papers", "Interactive learning tools"],
-  },
+  id: "6",
+  title: "IoT Based Home Automation",
+  category: "IoT",
+  tags: ["Embedded Systems", "Smart Home", "ESP8266", "Alexa", "Automation"],
+  description:
+    "A IoT based smart home automation system that enables users to control electrical appliances remotely using Wi-Fi.",
+  image: "/projects/iot/IoT-Smart-Home-Automation.webp", 
+  technologies: ["Arduino IDE", "NodeMCU", "ESP8266", "Relays", "Sensors", "C/C++"],
+  githubUrl: "https://github.com/Vishalghuge111/iot-based-home-automation",
+  liveUrl: "", // optional, can omit if not hosted
+  slug: "iot-based-home-automation",
+  problem:
+    "Controlling home appliances manually can be inconvenient, especially for elderly or disabled individuals. Additionally, energy inefficiency occurs when devices are left on unintentionally.",
+  solution:
+    "The system uses NodeMCU (ESP8266) to connect appliances to Wi-Fi and allows users to control them wirelessly through a mobile interface or IoT dashboard. It helps users turn appliances ON/OFF, monitor device state, and automate usage patterns.",
+  features: [
+    "Remote control of lights and fans via web or app UI",
+    "Built using NodeMCU (ESP8266) with Arduino code",
+    "Relay module integration to control high-voltage devices",
+    "Wi-Fi-based real-time communication",
+    "Basic sensor input for future automation (e.g. motion, temperature)",
+    "Low-cost and scalable for multiple rooms or appliances",
+  ]
+}
 ];
 
 export const projects = projectsData;
