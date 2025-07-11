@@ -1,18 +1,29 @@
 "use client"
 import { useState, useEffect } from "react"
-import type React from "react"
 import { useSearchParams, useRouter } from "next/navigation"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { FiSearch, FiArrowLeft, FiExternalLink } from "react-icons/fi"
+import Fuse from "fuse.js"
 import { searchData } from "@/data/searchData"
+
+type SearchItem = {
+  id: string | number
+  title: string
+  description?: string
+  excerpt?: string
+  tags?: string[]
+  searchableContent?: string
+  type: string
+  slug?: string
+}
 
 export default function SearchPage() {
   const searchParams = useSearchParams()
   const router = useRouter()
   const query = searchParams.get("q") || ""
   const [searchQuery, setSearchQuery] = useState(query)
-  const [results, setResults] = useState([])
+  const [results, setResults] = useState<SearchItem[]>([])
 
   useEffect(() => {
     if (query) {
@@ -22,16 +33,33 @@ export default function SearchPage() {
   }, [query])
 
   const performSearch = (searchTerm: string) => {
-    if (!searchTerm.trim()) {
-      setResults([])
-      return
-    }
-
-    const filtered = searchData.filter((item) =>
-      item.searchableContent.toLowerCase().includes(searchTerm.toLowerCase()),
-    )
-    setResults(filtered)
+  if (!searchTerm.trim()) {
+    setResults([])
+    return
   }
+
+  const fuse = new Fuse(searchData as SearchItem[], {
+    keys: [
+      { name: "title", weight: 0.4 },
+      { name: "description", weight: 0.3 },
+      { name: "excerpt", weight: 0.1 },
+      { name: "tags", weight: 0.2 },
+      { name: "searchableContent", weight: 1 },
+    ],
+    threshold: 0.5,              // slightly more tolerant
+    distance: 200,               // allows bigger gaps in words
+    minMatchCharLength: 2,
+    ignoreLocation: true,
+    includeScore: true,
+    findAllMatches: true,        // catch partial matches
+    useExtendedSearch: false,    // don't use complex operators
+  })
+
+  const cleanedQuery = searchTerm.toLowerCase().replace(/\b(of|the|in|a|an|and)\b/g, "") // remove stopwords
+  const results = fuse.search(cleanedQuery).map((res) => res.item)
+  setResults(results)
+}
+
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault()
@@ -41,7 +69,7 @@ export default function SearchPage() {
     }
   }
 
-  const getItemLink = (item: any) => {
+  const getItemLink = (item: SearchItem) => {
     switch (item.type) {
       case "project":
         return `/projects/${item.slug}`
@@ -126,9 +154,9 @@ export default function SearchPage() {
                         <div>
                           {item.tags && (
                             <div className="flex flex-wrap gap-2">
-                              {item.tags.map((tag) => (
+                              {item.tags.map((tag, i) => (
                                 <span
-                                  key={tag}
+                                  key={`${tag}-${i}`}
                                   className="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded"
                                 >
                                   {tag}

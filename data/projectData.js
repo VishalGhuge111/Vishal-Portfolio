@@ -152,7 +152,7 @@ export const projectsData = [
     "A IoT based smart home automation system that enables users to control electrical appliances remotely using Wi-Fi.",
   image: "/projects/iot/IoT-Smart-Home-Automation.webp", 
   technologies: ["Arduino IDE", "NodeMCU", "ESP8266", "Relays", "Sensors", "C/C++"],
-  githubUrl: "https://github.com/Vishalghuge111/iot-based-home-automation",
+  githubUrl: "https://github.com/vishalghuge111/iot-based-home-automation",
   liveUrl: "", // optional, can omit if not hosted
   slug: "iot-based-home-automation",
   problem:
