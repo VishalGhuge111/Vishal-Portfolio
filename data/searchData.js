@@ -20,13 +20,16 @@ export const searchData = [
     searchableContent: `${blog.title} ${blog.excerpt} ${(blog.tags || []).join(" ")} ${blog.content || ""} tutorial guide development programming blog article post writing technical documentation learning education tips tricks best practices coding software engineering web development react javascript typescript node mongodb express firebase tailwind css html python django vue angular docker aws git`,
   })),
 
-  // Experience
-  ...experienceData.map((experience) => ({
-    ...experience,
-    type: "experience",
-    tags: experience.technologies || [],
-    searchableContent: `${experience.company} ${experience.position} ${experience.description} ${(experience.technologies || []).join(" ")} work job internship career developer experience professional employment full time part time remote onsite software engineer full stack frontend backend programming coding development`,
-  })),
+// Experience
+...experienceData.map((experience) => ({
+  ...experience,
+  type: "experience",
+  title: `${experience.position} at ${experience.company}`, // ✅ Add title
+  description: experience.description || "", // ✅ Safe fallback
+  tags: experience.technologies || [],
+  searchableContent: `${experience.company} ${experience.position} ${experience.description || ""} ${(experience.technologies || []).join(" ")} work job internship career developer experience professional employment full time part time remote onsite software engineer full stack frontend backend programming coding development`,
+})),
+
 
   // Skills and general content
   {
